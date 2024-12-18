@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codely - Learn HTML, CSS & JS</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Codely Logo">
+            <h1>Codely</h1>
+        </div>
+        <nav>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="nav-links" class="nav-links">
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+                <li><a href="#javascript">JavaScript</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="auth-links">
+                    <a href="#" id="login-btn">Login</a> | 
+                    <a href="#" id="signup-btn">Sign Up</a>
+                </li>
+                <li id="logout-link" style="display: none;">
+                    <a href="#" id="logout-btn">Logout</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro">
+            <h2>Welcome to Codely!</h2>
+            <p>Learn the building blocks of the web: HTML, CSS, and JavaScript.</p>
+        </section>
+
+        <!-- HTML Section -->
+        <section id="html">
+            <h2>HTML - Structure Your Content</h2>
+            <p>HTML (HyperText Markup Language) is the standard language for creating web pages.</p>
+            <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;&lt;title&gt;Page Title&lt;/title&gt;&lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;This is a Heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </section>
+
+        <!-- CSS Section -->
+        <section id="css">
+            <h2>CSS - Style Your Content</h2>
+            <p>CSS (Cascading Style Sheets) describes how HTML elements are to be displayed on screen.</p>
+            <pre><code>body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: navy;
+}
+
+p {
+  font-size: 16px;
+}</code></pre>
+        </section>
+
+        <!-- JavaScript Section -->
+        <section id="javascript">
+            <h2>JavaScript - Make Your Content Interactive</h2>
+            <p>JavaScript is the programming language of the Web.</p>
+            <pre><code>document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('button').onclick = function() {
+    alert('Hello, World!');
+  }
+});</code></pre>
+            <button>Click Me</button>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form name="contact" method="POST" data-netlify="true">
+                <input type="hidden" name="form-name" value="contact">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Codely. All Rights Reserved.</p>
+    </footer>
+</body>
+                  </html>
+  
